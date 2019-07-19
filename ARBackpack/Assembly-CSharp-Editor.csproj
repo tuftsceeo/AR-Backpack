@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{2D0B2789-64FB-11AC-94B4-E7F5BFA874AA}</ProjectGuid>
+    <ProjectGuid>{5F989E77-F77E-7386-4F21-E53A9462F4B0}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -62,31 +62,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Mesh Rotator\Editor\Rotationtool.cs" />
     <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarEditor.cs" />
     <Compile Include="Assets\Simple Health Bar\Editor\SimpleHealthBarWindow.cs" />
-    <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Scripts\Editor\Editor_WaypointController.cs" />
     <None Include="Assets\Editor\Vuforia\CylinderTargetTextures\VuforiaMars_Images\authoringinfo.xml" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -311,19 +309,19 @@
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/15.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Advertisements">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.ads@2.0.8/Editor/UnityEditor.Advertisements.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Purchasing">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.purchasing@2.0.6/Editor/UnityEditor.Purchasing.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.1f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
@@ -688,15 +686,15 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{608676E5-F072-9A54-3D98-C10CC89C51C0}</Project>
+      <Project>{8EAECEE8-A905-58B1-A29F-CF39A57546BD}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
     <ProjectReference Include="VuforiaScripts.csproj">
-      <Project>{B0B829F6-DC2A-0E77-DC81-C8F3390E0849}</Project>
+      <Project>{BF1AE553-5B3C-D293-FA9E-A641BD90B45A}</Project>
       <Name>VuforiaScripts</Name>
     </ProjectReference>
     <ProjectReference Include="VuforiaEditorScripts.csproj">
-      <Project>{CEE097A6-52E7-F597-E579-C7EC939C143A}</Project>
+      <Project>{86BEB854-E5AD-8B16-91DA-8A1C691BDB1B}</Project>
       <Name>VuforiaEditorScripts</Name>
     </ProjectReference>
   </ItemGroup>

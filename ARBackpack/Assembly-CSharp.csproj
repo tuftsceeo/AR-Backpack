@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{608676E5-F072-9A54-3D98-C10CC89C51C0}</ProjectGuid>
+    <ProjectGuid>{8EAECEE8-A905-58B1-A29F-CF39A57546BD}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,13 +63,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\clicked.cs" />
-    <Compile Include="Assets\ConeCollider\Samples\Sample_1\CameraRotate.cs" />
-    <Compile Include="Assets\ConeCollider\Samples\Sample_1\InCheck.cs" />
-    <Compile Include="Assets\ConeCollider\Samples\Sample_2\SwingObject.cs" />
-    <Compile Include="Assets\ConeCollider\Samples\Sample_3\EnemyFind.cs" />
-    <Compile Include="Assets\ConeCollider\Samples\Sample_3\PlayerMove.cs" />
-    <Compile Include="Assets\ConeCollider\Script\ColliderTest.cs" />
-    <Compile Include="Assets\ConeCollider\Script\ConeCollider.cs" />
     <Compile Include="Assets\debugText.cs" />
     <Compile Include="Assets\GyroSensor.cs" />
     <Compile Include="Assets\helloPanel.cs" />
@@ -82,24 +75,13 @@
     <Compile Include="Assets\rotateStick.cs" />
     <Compile Include="Assets\Scene_Switch.cs" />
     <Compile Include="Assets\Scenes\sceneSwitch.cs" />
-    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\AsteroidController.cs" />
-    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\HealthPickupController.cs" />
-    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerController.cs" />
-    <Compile Include="Assets\Simple Health Bar\_Asteroids Example\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Simple Health Bar\Scripts\SimpleHealthBar.cs" />
     <Compile Include="Assets\Speedometer\Speedometer.cs" />
     <Compile Include="Assets\StabilizeObject.cs" />
     <Compile Include="Assets\textEditor.cs" />
     <Compile Include="Assets\trailSaver.cs" />
-    <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\CharacterControllerThirdPerson.cs" />
-    <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\SmoothFollow.cs" />
-    <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Demo Scene\Scripts\UserControlThirdPerson.cs" />
-    <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Scripts\Waypoint.cs" />
-    <Compile Include="Assets\TurnTheGameOn\Arrow WayPointer\Scripts\WaypointController.cs" />
     <Compile Include="Assets\url_info.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
-    <None Include="Assets\ConeCollider\readme_jp.txt" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
@@ -110,7 +92,6 @@
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro_Properties.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-    <None Include="Assets\ConeCollider\readme_en.txt" />
     <None Include="Assets\StreamingAssets\Vuforia\LZ.xml" />
     <None Include="Assets\Vuforia\Shaders\DepthMask.shader" />
     <None Include="Assets\Vuforia\Databases\Emulator\VuforiaEmulator.xml" />
@@ -128,32 +109,31 @@
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Bitmap.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMPro.cginc" />
     <None Include="Assets\Vuforia\Shaders\DepthContour.shader" />
-    <None Include="Assets\TurnTheGameOn\Arrow WayPointer\Read Me.txt" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_Sprite.shader" />
     <None Include="Assets\Vuforia\Shaders\Text3D.shader" />
     <None Include="Assets\TextMesh Pro\Resources\Shaders\TMP_SDF-Surface.shader" />
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.DataPrivacy">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/ScriptAssemblies/Unity.Analytics.DataPrivacy.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
@@ -336,13 +316,13 @@
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.1f1/Editor/Data/PlaybackEngines/VuforiaSupport/Managed/Runtime/Vuforia.UnityExtensions.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Editor">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Analytics.Tracker">
-      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Robots/EV3Thoughts/ARSensorInterface/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
+      <HintPath>C:/Users/lilyz/Documents/CEEO19/ThoughtBubble/AR-Backpack/ARBackpack/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.Tracker.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.1.1f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -692,11 +672,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="VuforiaScripts.csproj">
-      <Project>{B0B829F6-DC2A-0E77-DC81-C8F3390E0849}</Project>
+      <Project>{BF1AE553-5B3C-D293-FA9E-A641BD90B45A}</Project>
       <Name>VuforiaScripts</Name>
     </ProjectReference>
     <ProjectReference Include="VuforiaEditorScripts.csproj">
-      <Project>{CEE097A6-52E7-F597-E579-C7EC939C143A}</Project>
+      <Project>{86BEB854-E5AD-8B16-91DA-8A1C691BDB1B}</Project>
       <Name>VuforiaEditorScripts</Name>
     </ProjectReference>
   </ItemGroup>
