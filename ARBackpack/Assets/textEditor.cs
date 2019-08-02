@@ -1,5 +1,5 @@
 ﻿// Lily Zhang and Mohammed Emun
-// 7/19/2019
+// 8/2/2019
 // AR Panel display for visualizing Thingworx data
 
 using System.Collections;
@@ -9,20 +9,35 @@ using UnityEngine.UI;
 using TMPro;
 using UnityEngine.Networking;
 using MiniJSON;
+using System.Security.Cryptography.X509Certificates;
+using uPLibrary.Networking.M2Mqtt.Messages;
+using uPLibrary.Networking.M2Mqtt;
+using System.Net.Security;
+
+//THIS CURRENTLY USES API REQUESTS 
+// MQTT CURRENTLY CAUSES UNITY TO CRASH ~60 SECONDS AFTER PLAY IS CLICKED
+//TO USE MQTT:
+//    uncomment lines 51-69 and comment out line 71
+//TO USE API REQUESTS:
+//   comment out lines 51-69 and uncomment line 71
 
 public class textEditor : MonoBehaviour
-{
+{ 
     public static string url;
     public static string user;
     public static string pass;
 
     private List<string> keyVals;
-    private Dictionary<string, object> rowData;
+    private Dictionary<string, object> dict;
+
     private bool goodDownload;
-    private string panelErrorDisplay;
+    private string panelErrorDisplay = "some Error";
 
     public TextMeshProUGUI tmpText;
     private TMPro.TextMeshPro tmProh;
+
+    private MqttClient client;
+    private string broker = "iot.eclipse.org";
 
     public static object scriptReading = "hey world";
 
@@ -31,11 +46,30 @@ public class textEditor : MonoBehaviour
     {
         tmProh = GetComponent<TextMeshPro>() ?? gameObject.AddComponent<TextMeshPro>();
 
-        Debug.Log("here comes the incoming text");
         tmpText.text = "LOADING...";
 
         tmProh.text = tmpText.text;
         Debug.Log(tmProh.text);
+
+        //// MQTT stuff
+        //client = new MqttClient(broker);
+        //// register to message received 
+        //client.MqttMsgPublishReceived += client_MqttMsgPublishReceived;
+        //string clientId = System.Guid.NewGuid().ToString();
+        //goodDownload = false;
+        //try
+        //{
+        //    client.Connect(clientId);
+        //    Debug.Log("CONNECTED!!");
+        //    goodDownload = true;
+        
+        //}
+        //catch (System.Exception e)
+        //{
+        //    Debug.LogError("Connection error: " + e);
+        //}
+        //// subscribe to the topic
+        //client.Subscribe(new string[] { "topic/EV3ARProject" }, new byte[] { MqttMsgBase.QOS_LEVEL_EXACTLY_ONCE });
 
         StartCoroutine(GetRequest());
     }
@@ -50,7 +84,7 @@ public class textEditor : MonoBehaviour
         {
             foreach (string key in keyVals)
             {
-                output = output + key + ": " + rowData[key] + "\n";
+                output = output + key + ": " + dict[key] + "\n";
 
             }
         }
@@ -109,15 +143,15 @@ public class textEditor : MonoBehaviour
 
                 // deserialize json?
                 // https://gist.github.com/darktable/1411710
-                var dict = Json.Deserialize(request.downloadHandler.text) as Dictionary<string, object>;
+                var dictAll = Json.Deserialize(request.downloadHandler.text) as Dictionary<string, object>;
 
                 // https://stackoverflow.com/questions/22739791/parse-nested-json-with-minijson-unity3d/22745634#22745634
                 // data is passed as dictionary within a list
-                List<object> rows = dict["rows"] as List<object>;
-                rowData = rows[0] as Dictionary<string, object>;
+                List<object> rows = dictAll["rows"] as List<object>;
+                dict = rows[0] as Dictionary<string, object>;
 
                 // put all property names into a list
-                keyVals = new List<string>(rowData.Keys);
+                keyVals = new List<string>(dict.Keys);
                 // remove extraneous info from list; Thingworx users can't use these as n
                 keyVals.Remove("name");
                 keyVals.Remove("description");
@@ -128,7 +162,7 @@ public class textEditor : MonoBehaviour
                 Debug.Log("PRINTING KEY VALUES");
                 foreach (string key1 in keyVals)
                 {
-                    Debug.Log(key1 + ": " + rowData[key1]);
+                    Debug.Log(key1 + ": " + dict[key1]);
                 }
 
             }
@@ -145,6 +179,28 @@ public class textEditor : MonoBehaviour
         auth = System.Convert.ToBase64String(System.Text.Encoding.GetEncoding("ISO-8859-1").GetBytes(auth));
         auth = "Basic " + auth;
         return auth;
+    }
+
+    // for MQTT connection
+    void client_MqttMsgPublishReceived(object sender, MqttMsgPublishEventArgs e)
+    {
+        // handle message received 
+        string msg = System.Text.Encoding.UTF8.GetString(e.Message);
+        Debug.Log("Received message from " + e.Topic + " : " + msg);
+
+        // deserialize json?
+        // https://gist.github.com/darktable/1411710
+        dict = Json.Deserialize(msg) as Dictionary<string, object>;
+
+        // put all property names into a list
+        keyVals = new List<string>(dict.Keys);
+
+        // put all property values into another list
+        Debug.Log("PRINTING KEY VALUES");
+        foreach (string key1 in keyVals)
+        {
+            Debug.Log(key1 + ": " + dict[key1]);
+        }
     }
 }
 
